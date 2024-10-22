@@ -25,7 +25,6 @@ services:
       - static:/frontend_static
   gateway:
     build: ./gateway/
-    # А тут подключаем volume со статикой к gateway
     env_file: .env
     volumes:
       - static:/staticfiles/
